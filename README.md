@@ -59,6 +59,21 @@ class Solution {
 }
 ```
 
+### Complexity Analysis
+
+Time complexity : \mathcal{O}(N^2)O(N 
+2
+ ). To sort people takes \mathcal{O}(N \log N)O(NlogN) time. Then one proceeds to n insert operations, and each takes up to \mathcal{O}(k)O(k) time, where k is a current number of elements in the list. In total, one needs up to \mathcal{O}\left({\sum\limits_{k = 0}^{N - 1}{k}}\right)O( 
+k=0
+∑
+N−1
+​	
+ k) time, i.e. up to \mathcal{O}(N^2)O(N 
+2
+ ) time.
+
+Space complexity : \mathcal{O}(N)O(N) to keep the output.
+
 # References ;
 1. https://leetcode.com/articles/queue-reconstruction-by-height
 2. https://evelynn.gitbooks.io/google-interview/queue-reconstruction-by-height.html
